@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Karan-Portfolio/static/css/main.bf78e252.css",
+    "main.js": "/Karan-Portfolio/static/js/main.d061fcfc.js",
+    "static/media/DP.jpg": "/Karan-Portfolio/static/media/DP.007a953cf5b7a5d7b9dc.jpg",
+    "index.html": "/Karan-Portfolio/index.html",
+    "main.bf78e252.css.map": "/Karan-Portfolio/static/css/main.bf78e252.css.map",
+    "main.d061fcfc.js.map": "/Karan-Portfolio/static/js/main.d061fcfc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf78e252.css",
+    "static/js/main.d061fcfc.js"
+  ]
+}
