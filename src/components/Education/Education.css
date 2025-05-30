@@ -1,0 +1,270 @@
+.education {
+  background: var(--bg-secondary);
+  padding: 80px 0;
+  transition: background-color 0.3s ease;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--text-primary);
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); /* Keep gradient as is */
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: linear-gradient(to bottom, #667eea 0%, #764ba2 100%); /* Keep gradient as is */
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Keep gradient as is */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 0 0 6px var(--card-bg), 0 0 0 12px rgba(102, 126, 234, 0.1);
+  z-index: 2;
+  transition: box-shadow 0.3s ease;
+}
+
+.timeline-marker svg {
+  font-size: 1.4rem;
+}
+
+.timeline-content {
+  position: relative;
+  width: calc(50% - 40px);
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  left: calc(50% + 40px);
+}
+
+.timeline-item:nth-child(odd) .timeline-content:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background: var(--card-bg);
+  transform: rotate(45deg);
+  box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.03);
+  transition: background-color 0.3s ease;
+}
+
+.timeline-item:nth-child(even) .timeline-content:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background: var(--card-bg);
+  transform: rotate(45deg);
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.03);
+  transition: background-color 0.3s ease;
+}
+
+.education-card {
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.education-degree {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.education-degree:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); /* Keep gradient as is */
+}
+
+.education-institution h4 {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.education-meta {
+  display: flex;
+  gap: 15px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.education-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.education-meta svg {
+  color: #764ba2; /* Keep brand color for icons */
+}
+
+.education-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.education-achievements h5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.education-achievements h5 svg {
+  color: #764ba2; /* Keep brand color for icons */
+}
+
+.education-achievements ul {
+  list-style-type: none;
+  padding-left: 25px;
+}
+
+.education-achievements li {
+  position: relative;
+  padding-left: 5px;
+  margin-bottom: 5px;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.education-achievements li:before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); /* Keep gradient as is */
+}
+
+@media (max-width: 768px) {
+  .timeline:before {
+    left: 30px;
+  }
+
+  .timeline-marker {
+    left: 30px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .timeline-marker svg {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content {
+    width: calc(100% - 70px);
+    margin-left: 70px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    left: 0;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content:before,
+  .timeline-item:nth-child(even) .timeline-content:before {
+    left: -10px;
+    top: 20px;
+    right: auto;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.03);
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .education-degree {
+    font-size: 1.2rem;
+  }
+  
+  .education-institution h4 {
+    font-size: 1.1rem;
+  }
+  
+  .education-card {
+    padding: 20px;
+  }
+}

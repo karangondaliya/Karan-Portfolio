@@ -1,0 +1,66 @@
+.footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 0.7rem 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  height: 60px; /* Fixed height to match padding-bottom in App.css */
+  transition: background 0.3s ease;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-links a:hover {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); /* Keep gradient as is */
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-copyright {
+  color: rgba(255, 255, 255, 0.7); /* Using rgba for better adaptability in both themes */
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: 70px; /* Slightly taller on mobile */
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.3rem 0;
+  }
+  
+  .social-links {
+    margin-bottom: 0.2rem;
+  }
+}
