@@ -19,12 +19,22 @@ const Achievements = () => {
     {
       id: 2,
       title: 'Cloud Foundation',
-      issuer: 'AWS',
+      issuer: 'AWS Academy',
       date: 'June 2024',
       icon: faAws,
       description: 'Foundational knowledge of AWS cloud services, architecture principles, and best practices.',
       skills: ['Cloud Computing', 'AWS', 'Infrastructure'],
       credentialLink: 'https://www.credly.com/go/mLTNQ5TD' // Replace with actual credential link if available
+    },
+    {
+      id: 3,
+      title: 'Machine Learning Foundation',
+      issuer: 'AWS Academy',
+      date: 'June 2025',
+      icon: faAws,
+      description: 'Fundamental concepts of machine learning, including algorithms, data preprocessing, and model evaluation.',
+      skills: ['Machine Learning', 'AWS', 'Data Science'],
+      credentialLink: 'https://www.credly.com/go/t9C1i7Pf' // Replace with actual credential link if available
     }
   ];
 

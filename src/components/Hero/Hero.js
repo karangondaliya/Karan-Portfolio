@@ -22,10 +22,10 @@ const Hero = () => {
           </div>
           
           <div className="hero-text">
-            <h1>Hi, I'm <span className="highlight">Karan Gondaliya</span></h1>
-            <p className="hero-subtitle">Full Stack Developer</p>
+            <h1>Hey, I am <span className="highlight">Karan</span></h1>
+            <p className="hero-subtitle">Engineer, Tinkerer, Curious</p>
             <p className="hero-description">
-              Passionate about creating amazing web experiences with modern technologies
+              Passionate about creating amazing web experiences with modern technologies.
             </p>
             <div className="cta-container">
               <div className="hero-buttons">

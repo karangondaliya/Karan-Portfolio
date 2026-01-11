@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // Single-page application routing fix for GitHub Pages
+    const path = window.location.pathname;
+    const segments = path.split('/').filter(Boolean);
+    const repo = segments[0] === 'your-repo-name' ? '/your-repo-name' : '';
+    sessionStorage.setItem('redirect', path.replace(repo, ''));
+    window.location.href = window.location.origin + (repo || '') + '/';
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>

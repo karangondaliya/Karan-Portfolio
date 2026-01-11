@@ -10,7 +10,7 @@ const Projects = () => {
       description: "An AI-powered coding assistant tool that helps developers write, debug, and optimize code efficiently.",
       technologies: ["React", "Express", "Node.js", "MongoDB", "Langchain", "Python"],
       github: "https://github.com/karangondaliya/CodeMate-AI",
-      live: "#"
+      live: "https://code-mate-ai-nine.vercel.app/"
     },
     {
       title: "i-Medicare - Hostpital Management System", 
